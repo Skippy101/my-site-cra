@@ -1,0 +1,92 @@
+/* RightSidebar.css */
+.right-sidebar {
+  display: flex; /* Set the right-sidebar to use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  min-width: 150px; /* Minimum width for the right-sidebar */
+  /* max-width: 300px; */
+  /* flex-basis: 250px; Initial width for the right-sidebar */
+  background-color: #353538; /* Light gray background for contrast */
+  padding: 12px 36px; /* Padding inside the right-sidebar */
+  height: 100%;
+  flex: 0.2;
+
+}
+
+.sub-navbar {
+  position: relative;
+  top: 0;
+  padding: 0px;
+  margin: 0 -36px; /* Offset the parent padding */  
+}
+
+.sub-navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-navbar li {
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-navbar a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  color: lightgrey;
+  align-items:center;
+  justify-content: left;
+  padding: 8px 36px; /* Offset the parent padding */ 
+}
+
+.sub-navbar a:hover {
+  background-color: #525257;
+}
+
+.sub-navbar a.active {
+  color: #78af4c;
+  background-color: #525257;
+}
+.seperator-line {
+  background-color: #666;
+  height: 1px;
+  width: calc(100%+18px);
+  border: none;
+  margin: 5px -18px; /* Offset the parent padding */ 
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 18px;
+  background-color: #444;
+  padding: 8px;
+  padding-left: 20px;
+  border: none;
+  /* background-image: url('./../images/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 16px 16px; */
+}
+
+.search-icon {
+  width: 24px;       /* Control the width */
+  height: 24px;      /* Control the height */
+  fill: lightgray; /* Use current text color */
+  font-size: 24px;   /* Control size with font-size */
+}
+
+.search-bar input[type=text] {
+  background-color: #444;
+  border: none;
+  color: lightgray;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.search-bar i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}

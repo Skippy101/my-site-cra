@@ -1,11 +1,20 @@
 /* src/App.css */
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-html, body {
+html{
+  font-size: 16px; /* Base */
+}
+
+body {
   height: 100%; /* Ensure the body takes up full height */
   margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Base */
+  color: lightgray;
 }
 
 .header {
@@ -23,10 +32,4 @@ html, body {
 .main-content {
   flex: 1;
   padding: 20px;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 8px;
-  margin-top: 10px;
 }

@@ -3,12 +3,28 @@
 .resources-container {
   display: flex; /* Use flexbox to arrange the main content and sidebar */
   flex-direction: row;
+  flex: 1;
+  align-items: stretch;
   justify-content: space-between; /* Space between main content and sidebar */
-  height: 100%;
-  min-height: 500px;
+  /* min-height: 500px; */
+  /* height: 100vh; */
 }
 
 .main-content {
-  flex: 1; /* Take up remaining space */
-  margin-right: 20px; /* Space between main content and sidebar */
+  flex: 0.8; /* Take up remaining space */
+  margin-right: 0px; /* Space between main content and sidebar */
+  background-color: #161618; /* Light gray background for contrast */
+  color: lightgray
 }
+
+@media (max-width: 480px) {
+  .resources-container {
+    flex-direction: column; /* Stack the content and sidebar vertically on smaller screens */
+  }
+
+  .main-content, .right-sidebar {
+    flex: none; /* Reset flex properties */
+    width: 100%; /* Make both sections take up full width */
+  }
+}
+
