@@ -1,0 +1,28 @@
+/* Basic styles for the footer */
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    box-sizing: border-box;
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding for spacing */
+    position: relative; /* Allows absolute positioning for any internal elements if needed */
+    bottom: 0; /* Stick to the bottom of the page */
+    width: 100%; /* Full width */
+    /*height: 60px;*/
+  }
+  
+  .footer p {
+    margin: 5px 0; /* Small margin for spacing between paragraphs */
+    font-size: 1em; /* Default font size */
+  }
+  
+  /* Optional: Style for links */
+  .footer a {
+    color: #4caf50; /* Green color for links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+  }
+  

@@ -1,0 +1,32 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes up full height */
+  margin: 0; /* Remove default margin */
+}
+
+.header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
