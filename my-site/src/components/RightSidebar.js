@@ -1,6 +1,7 @@
 // RightSidebar.js
 import React from 'react';
 import './RightSidebar.css';
+import SvgIcons from './SvgIcons';
 
 const RightSidebar = () => {
   return (
@@ -15,8 +16,12 @@ const RightSidebar = () => {
       </nav>
       <hr className="seperator-line"/>
       <div className="search-bar-wrapper">
-        <svg className="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        {/* <svg className="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <use href={`${process.env.PUBLIC_URL}/search-icon.svg#search-icon`} />
+        </svg> */}
+        <SvgIcons />
+        <svg width="24" height="24">
+            <use href="#search-icon" />
         </svg>
         <input type="text" className="search-bar" placeholder="Search..."/>
       </div>
