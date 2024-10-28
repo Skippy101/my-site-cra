@@ -27,11 +27,20 @@ const Header = () => {
           </li>
           <li>
             <NavLink 
-              to="/about" 
+              to="/portfolio" 
               className={({ isActive }) => (isActive ? "active" : "")} 
               onClick={toggleMenu}
             >
-              About
+              Portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/blog" 
+              className={({ isActive }) => (isActive ? "active" : "")} 
+              onClick={toggleMenu}
+            >
+              Blog
             </NavLink>
           </li>
           <li>
@@ -41,6 +50,15 @@ const Header = () => {
               onClick={toggleMenu}
             >
               Resources
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/about" 
+              className={({ isActive }) => (isActive ? "active" : "")} 
+              onClick={toggleMenu}
+            >
+              About
             </NavLink>
           </li>
           <li>

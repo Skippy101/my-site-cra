@@ -14,7 +14,8 @@
   flex: 0.8; /* Take up remaining space */
   margin-right: 0px; /* Space between main content and sidebar */
   background-color: #161618; /* Light gray background for contrast */
-  color: lightgray
+  color: lightgray;
+  max-width: 100%;
 }
 
 @media (max-width: 480px) {

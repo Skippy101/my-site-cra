@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Block</title>
+    <link rel="stylesheet" href="styles.css">
+    <head>
+      <!-- Using prism -->
+      <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+     -->
+      <!-- Using highlightjs -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+      
+    </head>
+
+</head>
+<body>
+    <div class="snippet-container">
+        <div class="snippet-header">
+          <span class="snippet-line-number">28</span>
+          <span class="snippet-title">Group Primitives pointing toward the origin</span>
+          <span class="snippet-credit">credit: Jake Rice</span>
+        </div>
+        <p class="snippet-description">Calculates velocity from an object with a transform animated at an object level. Don't have to merge into a new object. Works on geo with changing point numbers</p>
+        <div class="snippet-tags">
+          <span class="snippet-tag">Wrangle: Points</span>
+          <span class="snippet-tag">Attribs</span>
+          <span class="snippet-tag">Bending</span>
+          <span class="snippet-tag">Advanced</span>
+        </div>
+        <div class="snippet-code-block">
+          <button id="copycode" class="snippet-copycode">Copy</button>
+          <pre>
+            <code class="language-python">
+# Add a point
+point = geo.createPoint()
+
+# Add an attribute. This is like a 'attribute create sop', so only do this once, not while looping over geometry!
+# the default value sets the type, so 1.0 is a float, but 1 is an int.
+geo.addAttrib(hou.attribType.Point, "id", 0.0)
+
+# Get a detail attribute
+start = geo.attribValue('tmin')
+
+# Get @ptnum, @numpt
+for point in geo.points():
+    print point.number()
+    print len(geo.iterPoints())
+
+# get a point attribute
+for point in geo.points():
+    print point.attribValue("Cd")
+
+# Set an attribute
+for point in geo.points():
+    point.setAttribValue("Cd", [1,0.5,0])
+}
+            </code>
+          </pre>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+  document.getElementById('copycode').addEventListener('click', function() {
+    navigator.clipboard.writeText(document.querySelector('pre code').innerText);
+    alert('Code copied to clipboard!');
+  });
+</script>

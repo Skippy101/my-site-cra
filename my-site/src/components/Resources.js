@@ -7,10 +7,7 @@ import './Resources.css';
 const Resources = () => {
   return (
     <div className="resources-container">
-      <MainContent>
-        <h2>Resources</h2>
-        <p>Find resources here!</p>
-      </MainContent>
+      <MainContent />
       <RightSidebar />
     </div>
   );

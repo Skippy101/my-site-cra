@@ -1,0 +1,48 @@
+[
+  {
+    "id": 27,
+    "title": "Randomize Attribute with Bias",
+    "description": "Creates a point attribute with a random value between a min and max value.",
+    "code": "private void writeObject(java.io.ObjectOutputStream s) throws java.io.IOException { s.defaultWriteObject(); }",
+    "tags": ["Wrangle", "Points", "Advanced"],
+    "author": "Stephen Bester",
+    "createdAt": "2020-10-15"
+  },
+  {
+    "id": 29,
+    "title": "VEX: Create a Volume from a mesh",
+    "description": "Creates a volume from a mesh using the VEX volume() function.",
+    "code": "volume myVol = volume(mesh);",
+    "tags": ["VEX", "Volume", "Mesh"],
+    "author": "John Doe",
+    "createdAt": "2020-10-17"
+  },
+  {
+    "id": 30,
+    "title": "VEX: Resample a Volume",
+    "description": "Resamples a volume using the VEX resample() function.",
+    "code": "resample(myVol, 128, 128, 128);",
+    "tags": ["VEX", "Volume", "Resample"],
+    "author": "Jane Doe",
+    "createdAt": "2020-10-18"
+  },
+  {
+    "id": 31,
+    "title": "VEX: Create a Ray from a Point",
+    "description": "Creates a ray from a point using the VEX ray() function.",
+    "code": "ray myRay = ray(P, D);",
+    "tags": ["VEX", "Ray", "Point"],
+    "author": "John Smith",
+    "createdAt": "2020-10-19"
+  },
+  {
+    "id": 32,
+    "title": "VEX: Get the Distance from a Ray to a Surface",
+    "description": "Gets the distance from a ray to a surface using the VEX distance() function.",
+    "code": "float dist = distance(myRay, mySurf);",
+    "tags": ["VEX", "Ray", "Surface", "Distance"],
+    "author": "Jane Smith",
+    "createdAt": "2020-10-20"
+  }
+]
+
